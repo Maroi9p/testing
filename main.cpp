@@ -3,13 +3,13 @@
 int main() {
     double firstNumber;
     double secondNumber;
-    char operation;
+    char operation; 
 
     std::cout << "Введите выражение (например, 12 + 3): ";
     if (!(std::cin >> firstNumber >> operation >> secondNumber)) {
         std::cerr << "Ошибка: некорректный ввод.\n";
         return 1;
-    }
+    } // Проверка на деление на ноль
 
     switch (operation) {
         case '+':
